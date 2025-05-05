@@ -21,21 +21,21 @@ export default function MageSkillTree() {
       {/* Skill Tree Layout */}
       <div className="relative flex flex-col items-center gap-8 mt-6">
         {/* Top node */}
-        <SkillCircle label="POKER FACE" />
+        <SkillCircle id="poker-face" label="POKER FACE" />
 
         {/* Horizontal skill path */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="CURSE OF CROW" />
+          <SkillCircle id="curse-of-crow" label="CURSE OF CROW" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="BLACK SHOES" />
+          <SkillCircle id="black-shoes" label="BLACK SHOES" />
           <Image src="/cabang-tiga.png" alt="-" width={100} height={100} />
-          <SkillCircle label="EVER PLAY THIS GAME BEFORE?" />
+          <SkillCircle id="ever-play-this-game-before" label="EVER PLAY THIS GAME BEFORE?" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="AVADA KEDAVRA" />
+          <SkillCircle id="avada-kedavra" label="AVADA KEDAVRA" />
         </div>
 
         {/* Bottom node */}
-        <SkillCircle label="ONE DAY OR DAY ONE" />
+        <SkillCircle id="one-day-or-day-one" label="ONE DAY OR DAY ONE" />
       </div>
     </div>
   );
