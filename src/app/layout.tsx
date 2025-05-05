@@ -2,10 +2,11 @@ import type { Metadata } from "next";
 import { Pixelify_Sans, Press_Start_2P } from "next/font/google";
 import "./globals.css";
 
+// Corrected variable name: no underscore, kebab-case only
 const pixelify = Pixelify_Sans({
   variable: "--font-pixelify",
   subsets: ["latin"],
-  weight: ["400"], // default weight
+  weight: ["700"],
 });
 
 const pressStart = Press_Start_2P({
@@ -26,9 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${pixelify.variable} ${pressStart.variable} antialiased`}
-      >
+      <body className={`${pixelify.variable} ${pressStart.variable} antialiased`}>
         {children}
       </body>
     </html>
