@@ -22,27 +22,32 @@ export default function NecromancerSkillTree() {
 
       {/* Skill Tree Layout */}
       <div className="relative flex flex-col items-center gap-8 mt-6">
-        {/* Top row with horizontal connections */}
+        {/* Top row */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="GO OUT SON!"  />
+          <SkillCircle label="GO OUT SON!" id="go-out-son" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="SURVIVE, PLEASE!"  />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="TO EASY"  />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="FINAL FATALITY" />
+          <SkillCircle label="SURVIVE, PLEASE!" id="survive-please" />
+          <Image src="/cabang-t.png" alt="-" width={100} height={100} />
+          <SkillCircle label="TO EASY" id="to-easy" />
+          <Image src="/cabang-t.png" alt="-" width={100} height={100} />
+          <SkillCircle label="FINAL FATALITY" id="final-fatality" />
         </div>
-
-        {/* Connect top row to middle */}
-        <div className="flex justify-center">
+        
+        {/* T-connections to middle with horizontal connection */}
+        {/* <div className="flex flex-col items-center">
           <Image src="/cabang-t.png" alt="↓" width={100} height={100} />
         </div>
-
-        {/* Bottom row with horizontal connection */}
-        <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="FINE I'LL STOP"  />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="PUNISH THEM"  />
+         */}
+        {/* Bottom row */}
+        <div className="flex ">
+        <div className=" items-center justify-center gap-2 sm:gap-4 ml-72 ">
+          <SkillCircle label="FINE I'LL STOP" id="fine-ill-stop" />
+          {/* <SkillCircle label="PUNISH THEM" id="punish-them" /> */}
+        </div>
+        <div className=" items-center justify-center gap-2 sm:gap-4 ml-24">
+          {/* <SkillCircle label="FINE I'LL STOP" id="fine-ill-stop" /> */}
+          <SkillCircle label="PUNISH THEM" id="punish-them" />
+        </div>
         </div>
       </div>
     </div>

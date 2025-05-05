@@ -1,3 +1,5 @@
+
+
 'use client';
 
 import Image from "next/image";
@@ -22,25 +24,30 @@ export default function BerserkerSkillTree() {
 
       {/* Skill Tree Layout */}
       <div className="relative flex flex-col items-center gap-8 mt-6">
-        {/* Top row of skills with connecting lines */}
+        {/* Top Row */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="HUH" />
+          <SkillCircle label="HUH" id="huh" />
+          <Image src="/cabang-t.png" alt="-" width={100} height={100} />
+          <SkillCircle label="FUN, I GUESS?" id="fun-i-guess" />
+          <Image src="/cabang-t.png" alt="-" width={100} height={100} />
+          <SkillCircle label="TASTE OF KILLING" id="taste-of-killing" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="FUN, I GUESS?" />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="TASTE OF KILLING" />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="MEET YOU AT HELL" />
+          <SkillCircle label="MEET YOU AT HELL" id="meet-you-at-hell" />
         </div>
-
-        {/* Connecting vertical line */}
-        <Image src="/cabang-t.png" alt="↓" width={100} height={100} />
-
-        {/* Bottom row of skills */}
-        <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="I GIVE UP" />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="HAD NO CHANCE" />
+        
+        {/* T-connections from top to bottom row */}
+        <div className="grid grid-cols-2 gap-40">
+          {/* Left T-connection */}
+          <div className="flex flex-col mr-24 " >
+          {/* <Image src="/cabang-t.png" alt="-" width={100} height={100} /> */}
+            <SkillCircle label="I GIVE UP" id="i-give-up" />
+          </div>
+          
+          {/* Right T-connection */}
+          <div className="flex flex-col mr-32">
+            {/* <Image src="/cabang-t.png" alt="↓" width={100} height={100} /> */}
+            <SkillCircle label="HAD NO CHANCE" id="had-no-chance" />
+          </div>
         </div>
       </div>
     </div>

@@ -24,33 +24,33 @@ export default function FighterSkillTree() {
       <div className="relative flex flex-col items-center gap-8 mt-6">
         {/* Top row with horizontal connections */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="DONT RUN"  />
+          <SkillCircle label="DONT RUN"  id="dont-run" />
+          <Image src="/cabang-t.png" alt="-" width={100} height={100} />
+          <SkillCircle label="HEAVY LEFT PUNCH"  id="heavy-left-punch" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="HEAVY LEFT PUNCH"  />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="BLACK DRAGON FORM" />
+          <SkillCircle label="BLACK DRAGON FORM" id="black-dragon-form" />
         </div>
 
         {/* Connect top row to middle row */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Image src="/cabang-t.png" alt="↓" width={100} height={100} />
-        </div>
+        </div> */}
 
         {/* Middle row with horizontal connection */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="DIVINE JUDGMENT" />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="NEVER COMING BACK"  />
+          <SkillCircle label="DIVINE JUDGMENT" id="divine-judgment" />
+          <Image src="/cabang-t.png" alt="-" width={100} height={100} />
+          <SkillCircle label="NEVER COMING BACK"  id="never-coming-back" />
         </div>
         
         {/* Connect middle row to bottom */}
-        <div className="flex justify-center">
+        {/* <div className="flex justify-center">
           <Image src="/cabang-t.png" alt="↓" width={100} height={100} />
         </div>
-        
+         */}
         {/* Bottom node */}
         <div className="flex justify-center">
-          <SkillCircle label="THE DAY HAS COME"  />
+          <SkillCircle label="THE DAY HAS COME" id="the-day-has-come" />
         </div>
       </div>
     </div>
