@@ -2,11 +2,15 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { skills, SkillId } from "../../../../data/data";
 
-export default function SkillDetail({ params }: { params: { id: string } }) {
-  const id = params.id as SkillId;
-  const skill = skills[id];
+async function SkillDetail({ 
+    params,
+ }: { 
+    params: Promise<{ id?: string }>
+}) {
 
-  if (!skill) return notFound();
+    const { id } = await params;
+    const skill = id ? skills[id as SkillId] : "";
+    if (!skill) return notFound();
 
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] p-10 text-center flex flex-col items-center">
@@ -31,3 +35,5 @@ export default function SkillDetail({ params }: { params: { id: string } }) {
     </div>
   );
 }
+
+export default SkillDetail;
