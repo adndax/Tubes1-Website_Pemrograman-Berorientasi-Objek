@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 import SkillCircle from "../../component/SkillCircle";
 
@@ -21,21 +23,21 @@ export default function MageSkillTree() {
       {/* Skill Tree Layout */}
       <div className="relative flex flex-col items-center gap-8 mt-6">
         {/* Top node */}
-        <SkillCircle id="poker-face" label="POKER FACE" />
+        <SkillCircle label="POKER FACE"  id="poker-face" />
 
         {/* Horizontal skill path */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle id="curse-of-crow" label="CURSE OF CROW" />
+          <SkillCircle label="CURSE OF CROW" id="curse-of-crow" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle id="black-shoes" label="BLACK SHOES" />
+          <SkillCircle label="BLACK SHOES" id="black-shoes" />
           <Image src="/cabang-tiga.png" alt="-" width={100} height={100} />
-          <SkillCircle id="ever-play-this-game-before" label="EVER PLAY THIS GAME BEFORE?" />
+          <SkillCircle label="EVER PLAY THIS GAME BEFORE?"  id="ever-play-this-game-before" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle id="avada-kedavra" label="AVADA KEDAVRA" />
+          <SkillCircle label="AVADA KEDAVRA"  id="avada-kedavra" />
         </div>
 
         {/* Bottom node */}
-        <SkillCircle id="one-day-or-day-one" label="ONE DAY OR DAY ONE" />
+        <SkillCircle label="ONE DAY OR DAY ONE" id="one-day-or-day-one" />
       </div>
     </div>
   );
