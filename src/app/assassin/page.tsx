@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import SkillCircle from "../../component/SkillCircle";
+import InfoButton from "@/component/Info";
 
 export default function AssassinSkillTree() {
   return (
@@ -57,6 +58,7 @@ export default function AssassinSkillTree() {
           <SkillCircle label="YOUR TIME HAS COME" id="your-time-has-come" />
         </div>
       </div>
+      <InfoButton/>
     </div>
   );
 }

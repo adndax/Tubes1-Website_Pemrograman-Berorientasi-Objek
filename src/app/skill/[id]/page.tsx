@@ -28,7 +28,6 @@ export default function SkillDetail({ params }: { params: { id: string } }) {
             {skill.description}
         </p>
       </div>
-
     </div>
   );
 }

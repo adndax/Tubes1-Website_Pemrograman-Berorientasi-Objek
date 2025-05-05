@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import SkillCircle from "../../component/SkillCircle";
+import InfoButton from "@/component/Info";
 
 export default function MageSkillTree() {
   return (
@@ -39,6 +40,7 @@ export default function MageSkillTree() {
         {/* Bottom node */}
         <SkillCircle label="ONE DAY OR DAY ONE" id="one-day-or-day-one" />
       </div>
+      <InfoButton/>
     </div>
   );
 }

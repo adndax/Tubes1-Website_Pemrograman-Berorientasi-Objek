@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import SkillCircle from "../../component/SkillCircle";
+import InfoButton from "@/component/Info";
 
 export default function NecromancerSkillTree() {
   return (
@@ -50,6 +51,7 @@ export default function NecromancerSkillTree() {
         </div>
         </div>
       </div>
+      <InfoButton />
     </div>
   );
 }

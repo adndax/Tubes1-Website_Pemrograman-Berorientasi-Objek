@@ -1,6 +1,7 @@
 'use client';
 
 import Image from "next/image";
+import InfoButton from "@/component/Info";
 import SkillCircle from "../../component/SkillCircle";
 
 export default function FighterSkillTree() {
@@ -53,6 +54,7 @@ export default function FighterSkillTree() {
           <SkillCircle label="THE DAY HAS COME" id="the-day-has-come" />
         </div>
       </div>
+      <InfoButton/>
     </div>
   );
 }

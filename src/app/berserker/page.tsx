@@ -3,6 +3,7 @@
 'use client';
 
 import Image from "next/image";
+import InfoButton from "@/component/Info";
 import SkillCircle from "../../component/SkillCircle";
 
 export default function BerserkerSkillTree() {
@@ -50,6 +51,7 @@ export default function BerserkerSkillTree() {
           </div>
         </div>
       </div>
+      <InfoButton/>
     </div>
   );
 }
