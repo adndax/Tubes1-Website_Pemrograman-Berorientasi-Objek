@@ -3,14 +3,14 @@
 import Image from "next/image";
 import SkillCircle from "../../component/SkillCircle";
 
-export default function NecromancerSkillTree() {
+export default function MageSkillTree() {
   return (
     <div className="min-h-screen bg-[var(--background)] text-[var(--foreground)] p-6 sm:p-12 flex flex-col items-center gap-8 font-press">
       {/* Header */}
       <div className="w-full flex justify-between items-start">
         <div className="flex items-center gap-2">
-          <Image src="/icon_necromancer.png" alt="Necromancer" width={100} height={100} />
-          <span className="text-lg text-[#FFD5A4] font-press">Necromancer</span>
+          <Image src="/icon_mage.png" alt="Mage" width={100} height={100} />
+          <span className="text-lg text-[#FFD5A4] font-press">Mage</span>
         </div>
         <Image src="/logo.png" alt="Logo" width={100} height={100} />
       </div>
@@ -22,28 +22,22 @@ export default function NecromancerSkillTree() {
 
       {/* Skill Tree Layout */}
       <div className="relative flex flex-col items-center gap-8 mt-6">
-        {/* Top row with horizontal connections */}
+        {/* Top node */}
+        <SkillCircle label="POKER FACE" id="poker-face" />
+
+        {/* Horizontal skill path */}
         <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="GO OUT SON!"  />
+          <SkillCircle label="CURSE OF CROW" id="curse-of-crow" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="SURVIVE, PLEASE!"  />
+          <SkillCircle label="BLACK SHOES"  id="black-shoes" />
+          <Image src="/cabang-tiga.png" alt="-" width={100} height={100} />
+          <SkillCircle label="EVER PLAY THIS GAME BEFORE?" id="ever-play-this-game-before" />
           <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="TO EASY"  />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="FINAL FATALITY" />
+          <SkillCircle label="AVADA KEDAVRA" id="avada-kedavra" />
         </div>
 
-        {/* Connect top row to middle */}
-        <div className="flex justify-center">
-          <Image src="/cabang-t.png" alt="↓" width={100} height={100} />
-        </div>
-
-        {/* Bottom row with horizontal connection */}
-        <div className="flex items-center justify-center gap-2 sm:gap-4">
-          <SkillCircle label="FINE I'LL STOP"  />
-          <Image src="/cabang-lurus.png" alt="-" width={100} height={100} />
-          <SkillCircle label="PUNISH THEM"  />
-        </div>
+        {/* Bottom node */}
+        <SkillCircle label="ONE DAY OR DAY ONE" id="one-day-or-day-one" />
       </div>
     </div>
   );
