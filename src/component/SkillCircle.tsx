@@ -1,12 +1,21 @@
+"use client";
+
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 type SkillCircleProps = {
   label: string;
+  id: string; // unique skill ID
 };
 
-export default function SkillCircle({ label }: SkillCircleProps) {
+export default function SkillCircle({ label, id }: SkillCircleProps) {
+  const router = useRouter();
+
   return (
-    <div className="relative w-[158px] h-[158px] flex items-center justify-center text-center">
+    <div
+      onClick={() => router.push(`/skill/${id}`)}
+      className="relative w-[158px] h-[158px] flex items-center justify-center text-center cursor-pointer hover:scale-105 transition-transform"
+    >
       <Image
         src="/lingkaran.png"
         alt="Skill Circle"
