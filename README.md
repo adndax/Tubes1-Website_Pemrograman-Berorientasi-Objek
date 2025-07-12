@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<h1 align="center">PURRY LEVELING - Skill Path Storyline</h1>
 
-## Getting Started
+<p align="center">
+  <img src="public/logo.png" alt="Main" width="400">
+</p>
 
-First, run the development server:
+Purry Leveling adalah game turn-based RPG yang dikembangkan menggunakan prinsip Object-Oriented Programming (OOP) dengan bahasa C++. Website ini merupakan pelengkap dari game utama, dirancang untuk menyajikan eksplorasi naratif dari setiap karakter dan kekuatan yang dimiliki melalui visualisasi skill path dan latar belakang cerita.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Tujuan Website
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Website ini bertujuan untuk:
+- Menyampaikan lore dari dunia Purry Leveling
+- Menjelaskan asal-usul kekuatan dan skill setiap karakter
+- Memberikan pengalaman naratif yang lebih mendalam bagi pemain
+- Menyajikan skill tree interaktif untuk masing-masing class
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Konten Utama
+1. Intro Dunia & Lore
+Setiap kekuatan memiliki cerita. Dalam dunia yang dipenuhi sihir, darah, dan pengkhianatan, tidak ada kekuatan yang muncul begitu saja. Website ini membuka lapisan naratif di balik skill yang tampak sederhana.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. Class dan Karakter
+Pemain dapat menelusuri sejarah dari berbagai class:
+- Fighter
+- Mage
+- Berserker
+- Necromancer
+- Assassin
+  
+3. Skill Path
+Setiap karakter memiliki jalur perkembangan skill tersendiri, yang ditampilkan dalam bentuk diagram atau visualisasi. Skill tersebut berkaitan erat dengan pengalaman hidup dan nilai-nilai yang dianut karakter tersebut, membentuk alur evolusi yang bermakna.
 
-## Learn More
+## Teknologi
 
-To learn more about Next.js, take a look at the following resources:
+Website ini dibangun menggunakan:
+- Next.Js untuk tampilan antarmuka
+- Desain visual bertema pixel-art untuk konsistensi dengan tampilan game
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Catatan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Website ini dikembangkan sebagai bagian dari Tugas Besar 1 IF2210 - Pemrograman Berorientasi Objek di Institut Teknologi Bandung. Semua konten visual dan cerita dikembangkan secara orisinal untuk memperluas dunia dan makna dari game Purry Leveling.
